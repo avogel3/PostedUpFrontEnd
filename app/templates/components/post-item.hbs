@@ -1,9 +1,15 @@
 <div class="post">
   <div class="panel panel-default">
     <div class="panel-heading">
-      <strong>{{post.title}}</strong>
+      <strong class="post-title">{{post.title}}</strong>
+      <span class="post-date label label-info pull-right">{{post.posted_date}}</span>
     </div>
     <div class="panel-body">
+      {{#if post.hasImage}}
+        <div class="post-image">
+          <img src="{{post.image}}" class="img-responsive">
+        </div>
+      {{/if}}
       {{{post.content}}}
     </div>
   </div>
