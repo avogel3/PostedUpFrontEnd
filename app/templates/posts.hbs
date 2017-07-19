@@ -1,6 +1,6 @@
-<h3>Posts Index</h3>
-<ul>
-  {{#each model as |post|}}
-    <li class="post">{{post.title}}</li>
+<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+  <h3>Posts Index</h3>
+  {{#each model as |postItem|}}
+    {{post-item post=postItem}}
   {{/each}}
-</ul>
+</div>
