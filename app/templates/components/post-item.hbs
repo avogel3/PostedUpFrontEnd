@@ -1,7 +1,9 @@
 <div class="post">
   <div class="panel panel-default">
     <div class="panel-heading">
-      <strong class="post-title">{{post.title}}</strong>
+      <strong class="post-title">
+        {{link-to post.title 'post' post.id}}
+      </strong>
       <span class="post-date label label-info pull-right">{{post.posted_date}}</span>
     </div>
     <div class="panel-body">
