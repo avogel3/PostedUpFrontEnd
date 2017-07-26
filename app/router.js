@@ -1,5 +1,5 @@
-import Ember from 'ember';
-import config from './config/environment';
+import Ember from "ember";
+import config from "./config/environment";
 
 const Router = Ember.Router.extend({
   location: config.locationType,
@@ -7,9 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('posts');
-  this.route('not-found', { path: '/*path' });
-  this.route('post', { path: '/posts/:post_id' });
+  this.route("posts");
+  this.route("not-found", { path: "/*path" });
+  this.route("post", { path: "/posts/:post_id" });
+  this.route("login");
 });
 
 export default Router;
